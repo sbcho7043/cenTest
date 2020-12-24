@@ -13,6 +13,10 @@ import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "./pages/HomeScreen";
+import Menu1 from "./pages/Menu1";
+import Menu2 from "./pages/Menu2";
+import Menu3 from "./pages/Menu3";
+import Menu4 from "./pages/Menu4";
 
 const Stack = createStackNavigator();
 
@@ -23,6 +27,10 @@ const App = () => {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="menu1" component={Menu1} />
+          <Stack.Screen name="menu2" component={Menu2} />
+          <Stack.Screen name="menu3" component={Menu3} />
+          <Stack.Screen name="menu4" component={Menu4} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>
